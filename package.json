@@ -1,9 +1,11 @@
 {
   "name": "foost",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "A simple Fetch API wrapper. Fetch is good, it just needs a little boost.",
   "browser": "src/index.js",
-  "files": [],
+  "files": [
+    "src/util.js"
+  ],
   "type": "module",
   "scripts": {
     "test": "node ./src/test-server.js"
