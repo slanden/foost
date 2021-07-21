@@ -15,7 +15,7 @@ export class Foost {
   }
 
   async delete(url, options = {}) {
-    return (await this.request(url, { ...options, method: 'delete' })).body;
+    return (await this.request(url, { ...options, method: 'DELETE' })).body;
   }
 
   async get(url, options = {}) {
@@ -23,16 +23,16 @@ export class Foost {
   }
 
   async patch(url, body, options = {}) {
-    return (await this.request(url, { ...options, method: 'patch', body }))
+    return (await this.request(url, { ...options, method: 'PATCH', body }))
       .body;
   }
 
   async post(url, body, options = {}) {
-    return (await this.request(url, { ...options, method: 'post', body })).body;
+    return (await this.request(url, { ...options, method: 'POST', body })).body;
   }
 
   async put(url, body, options = {}) {
-    return (await this.request(url, { ...options, method: 'put', body })).body;
+    return (await this.request(url, { ...options, method: 'PUT', body })).body;
   }
 
   async request(url, options = {}) {
@@ -46,7 +46,7 @@ export class Foost {
       ...this._options,
       ...options,
     }).then(async (r) => {
-      // return response-like object with the resolved body
+      // Return a response-like object with the resolved body
 
       const res = {
         headers: r.headers,

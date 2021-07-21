@@ -1,6 +1,6 @@
 {
   "name": "foost",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "A simple Fetch API wrapper. Fetch is good, it just needs a little boost.",
   "main": "src/index.js",
   "files": [
@@ -22,10 +22,10 @@
   "author": "Shelby Landen",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^7.27.0",
+    "eslint": "^7.31.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "prettier": "^2.3.0",
-    "puppeteer": "^9.1.1"
+    "prettier": "^2.3.2",
+    "puppeteer": "^10.1.0"
   }
 }
